@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <title>My mobile page!</title>
+        <link rel="stylesheet" type="text/css" href="jq_mobile.css">
+        <link rel="stylesheet" href="themes/theme1.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    </head>
+    <boby>
+        <div data-role = "page" id = "page1" data-theme="d">
+            <div data-role = "header" class = "header-padding">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width: 33%;">
+                            <i class="fas fa-arrow-left text-color"></i>
+                        </td>
+                        <td style="width: 33%; text-align: center;">
+                            <div data-role="collapsible" data-iconpos="right" data-collapsed="true"
+                                data-collapsed-icon="carat-u" data-expanded-icon="carat-d" data-inset="false"> 
+                                <h3>
+                                    Сделки
+                                </h3>
+                                <table class = "top-menu-content">
+                                    <tr>   
+                                        <td class = "td1"><img src = "img/create.png"></td>
+                                        <td class = "td2">Создать сделку</td> 
+                                    </tr>
+                                    <tr>
+                                        <td class = "td1"><img src = "img/all.png"></td>
+                                        <td class = "td2">Все сделки</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "td1"><img src = "img/new.png"></td>
+                                        <td class = "td2">Новые сделки</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "td1"><img src = "img/new.png"></td>
+                                        <td class = "td2">Мои сделки</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "td1"><img src = "img/filter.png"></td>
+                                        <td class = "td2">Пользовательский фильтр</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "td1"><img src = "img/set.png"></td>
+                                        <td class = "td2">Настроить фильтр</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "td1"><img src = "img/visible.png"></td>
+                                        <td class = "td2">Видимые поля</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "td1"><img src = "img/sort.png"></td>
+                                        <td class = "td2">Сортировать по</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td style="width: 33%; text-align: right;">
+                            <i class="far fa-calendar-alt cal text-color"></i>
+                            <div class = "radius-red">12</div>
+                            <i class="fas fa-bell text-color"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div data-role = "main" class = "ui-content">
+                <div data-role="collapsible" data-iconpos="right" data-collapsed="false"
+					data-collapsed-icon="arrow-u" data-expanded-icon="arrow-d"> 
+					<h3>
+						<div class = "hands">
+							<img src = "img/hand.png">
+						</div>
+						<div class = "trade-name">
+							Название сделки<br>
+							<span>23.03.2018</span>
+						</div>
+					</h3>
+					<div>
+						<table style="width: 100%;">
+							<tr>
+								<td style="width: 50%;">
+									<button class = "delivery">Доставка товара</button>
+								</td>
+								<td style="width: 50%;">
+								</td>
+							</tr>
+							<tr>
+								<td class = "col-left-noline gray-header">
+									МЕНЕДЖЕР
+								</td>
+								<td class = "col-left-noline gray-header">
+									КОНТАКТНОЕ ЛИЦО
+								</td>
+							</tr>
+							<tr>
+								<td class = "name-people-1">
+									Плеханов Илья...
+								</td>
+								<td class = "name-people-1 name-people-2">
+									Иван Игоревич
+								</td>
+							</tr>
+							<tr class = "indentation">
+								<td class = "col-left-noline gray-header">
+									ДАТА ОКОНЧАНИЯ
+								</td>
+								<td class = "col-left-noline gray-header">
+									СТОИМОСТЬ
+								</td>
+							</tr>
+							<tr>
+								<td class = "col-date">
+									24.03.2018
+								</td>
+								<td class = "col-value col-date">
+									100 000 руб.
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+             </div>
+             <div data-role = "main" class = "ui-content">
+                <div data-role="collapsible" data-iconpos="right" data-collapsed="false"
+					data-collapsed-icon="arrow-u" data-expanded-icon="arrow-d"> 
+					<h3>
+						<div class = "hands">
+							<img src = "img/hand.png">
+						</div>
+						<div class = "trade-name">
+							Новый лид: Callback<br>
+							<span>23.03.2018</span>
+						</div>
+					</h3>
+					<div>
+						<table style="width: 100%;">
+							<tr>
+								<td>
+									<button class = "delivery">Отправлен договор</button>
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td class = "gray-header">
+									МЕНЕДЖЕР
+								</td>
+								<td class = "gray-header">
+									КОНТАКТНОЕ ЛИЦО
+								</td>
+							</tr>
+							<tr>
+								<td class = "col-left name-people-1">
+									Игорь
+								</td>
+								<td class = "col-left name-people-1">
+									Иван Игоревич
+								</td>
+							</tr>
+							<tr>
+								<td class = "gray-header">
+									ТИП
+								</td>
+								<td class = "gray-header">
+									САЙТ ИСТОЧНИК
+								</td>
+							</tr>
+							<tr>
+								<td class = "col-left col-date">
+									Звонок
+								</td>
+								<td class = "col-left col-value">
+									5crm.ru
+								</td>
+							</tr>
+                            <tr>
+                                <td class = "gray-header" colspan="2">
+                                    НАЗВАНИЕ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "col-left col-date" colspan="2">
+                                    Новый лид: Callback
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "gray-header" colspan="2">
+                                    ОПИСАНИЕ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "col-left col-date" colspan="2">
+                                    Отсюда естественно следует, что 
+                                    программа лояльности однородно 
+                                    специфирует конструктивный
+                                </td>
+                            </tr>
+                            <tr>
+								<td class = "gray-header">
+									ДАТА СОЗДАНИЯ
+								</td>
+								<td class = "gray-header">
+									ДАТА ОБНОВЛЕНИЯ
+								</td>
+							</tr>
+							<tr>
+								<td class = "col-left name-people-1">
+								    23.03.18, 17:28
+								</td>
+								<td class = "col-left name-people-1">
+									23.03.18, 17:35
+								</td>
+							</tr>
+                            <tr>
+								<td class = "gray-header">
+									СЕБЕСТОИМОСТЬ
+								</td>
+								<td class = "gray-header">
+									СТОИМОСТЬ
+								</td>
+							</tr>
+							<tr>
+								<td class = "col-left name-people-1">
+									85 500 руб.
+								</td>
+								<td class = "col-left name-people-1">
+									100 000 руб.
+								</td>
+							</tr>
+                        </table>
+					</div>
+				</div>
+            </div>
+            <div data-role = "footer">
+                <div class = "badges-text">
+                    <img src = "img/hand.png"> 
+                    <div class = "text-footer text-footer-green">Сделки</div>
+                </div>
+                <div class = "badges-text">
+                    <a href="#page2">
+                        <img src = "img/task.png"> 
+                        <div class = "text-footer">Задачи</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <a href = "#page3">
+                        <img src = "img/contact.png"> 
+                        <div class = "text-footer">Контакты</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <a href="#page4">
+                        <img src = "img/call.png"> 
+                        <div class = "text-footer">Звонки</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <img src = "img/menu.png"> 
+                    <div class = "text-footer">Меню</div>
+                </div>
+            </div>
+        </div>
+        <div data-role = "page" id = "page2" data-theme="d">
+            <div data-role = "header" class = "header-padding">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width: 33%;">
+                            <i class="fas fa-arrow-left text-color"></i>
+                        </td>
+                        <td style="width: 33%; text-align: center;">
+                            <div data-role="collapsible" data-iconpos="right" data-collapsed="true"
+                                data-collapsed-icon="carat-u" data-expanded-icon="carat-d" data-inset="false"> 
+                                <h3>
+                                    Задачи
+                                </h3>
+                            </div>
+                        </td>
+                        <td style="width: 33%; text-align: right;">
+                            <i class="far fa-calendar-alt cal text-color"></i>
+                            <div class = "radius-red">12</div>
+                            <i class="fas fa-bell text-color"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class = "for-today">
+                            <div class="today">На сегодня</div>
+                        </td> 
+                        <td class = "for-today"><div>На завтра</div></td> 
+                        <td class = "for-today"><div>На дату</div></td>
+                    </tr>
+                </table>
+            </div>
+            <div data-role = "main" class = "ui-content">
+                <div data-role="collapsible" data-iconpos="right" data-collapsed="false"
+                    data-collapsed-icon="arrow-u" data-expanded-icon="arrow-d">
+                    <h3>
+                        <div class = "hands">
+                            <img src = "img/hand.png">
+                        </div>
+                        <div class = "trade-name">
+                            Позвонить клиенту<br>
+                            <span>Сегодня, 12:14</span>
+                        </div>
+                    </h3>
+                    <table style = "width: 100%;">
+                        <tr>
+                            <td style="width: 50%;">
+                                <button class = "button-open">ОТКРЫТА</button>
+                            </td>
+                            <td style="width: 50%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "col-date" colspan="2">
+                                Погрешность изготовления отталкивает бамбуковый медведь панда.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "col-left-noline gray-header">
+                                Менеджер
+                            </td>
+                            <td class = "col-left-noline gray-header">
+                                Приоритет
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "name-people-1">
+                                Корнев Иван
+                            </td>
+                            <td class = "name-people-1">
+                                Высокий
+                            </td>
+                        </tr>
+                        <tr class = "indentation">
+                            <td class = "col-left-noline gray-header">
+                                Дата окончания
+                            </td>
+                            <td class = "col-left-noline gray-header">
+                                Дата создания
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "col-date">
+                                02.04.18, 14:00
+                            </td>
+                            <td class = "col-date">
+                                27.03.18, 00:44
+                            </td>
+                        </tr>
+                        <tr class = "indentation">
+                            <td class = "col-left-noline gray-header">
+                                Оценка времени
+                            </td>
+                            <td class = "col-left-noline gray-header">
+                                Дата создания
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "col-date">
+                                2д 0ч 0мин 
+                            </td>
+                            <td class = "col-date">
+                                27.03.18, 00:44
+                            </td>
+                        </tr>
+                        <tr class = "indentation">
+                            <td class = "col-left-noline gray-header">
+                                ЧЕК ЛИСТ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "name-people-1 name-people-2 call" colspan="2">
+                                Позвонить клиенту
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "name-people-1 name-people-2 call colspan="2"">
+                                Спросить как у него дела
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "col-date colspan="2"">
+                                Бросить трубку
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div data-role="collapsible" data-iconpos="right" data-collapsed="false" data-collapsed-icon="arrow-u" data-expanded-icon="arrow-d">
+                    <h3>
+                        <div class = "hands">
+                            <img src = "img/hand.png">
+                        </div>
+                        <div class = "trade-name">
+                            Отправить товар курьеру<br>
+                            <span>Сегодня, 12:14</span>
+                        </div>
+                    </h3>
+                    <table style = "width: 100%;">
+                        <tr>
+                            <td style="width: 50%;">
+                                <button class = "button-open overdue">ПРОСРОЧЕНА</button>
+                            </td>
+                            <td style="width: 50%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "col-date" colspan="2">
+                                Погрешность изготовления отталкивает бамбуковый медведь панда.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div data-role="collapsible" data-iconpos="right" data-collapsed="false" data-collapsed-icon="arrow-u" data-expanded-icon="arrow-d">
+                    <h3>
+                        <div class = "hands">
+                            <img src = "img/hand.png">
+                        </div>
+                        <div class = "trade-name">
+                            Вызвать курьера<br>
+                            <span>Сегодня, 12:14</span>
+                        </div>
+                    </h3>
+                    <table style = "width: 100%;">
+                        <tr>
+                            <td style="width: 50%;">
+                                <button class = "button-open accomplished">ВЫПОЛНЕНА</button>
+                            </td>
+                            <td style="width: 50%;">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <div class = "badges-text">
+                    <a href="#page1">
+                        <img src = "img/hand.png"> 
+                        <div class = "text-footer">Сделки</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <img src = "img/task.png"> 
+                    <div class = "text-footer text-footer-green">Задачи</div>
+                </div>
+                <div class = "badges-text">
+                    <a href = "#page3">
+                        <img src = "img/contact.png"> 
+                        <div class = "text-footer">Контакты</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <a href="#page4">
+                        <img src = "img/call.png"> 
+                        <div class = "text-footer">Звонки</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <img src = "img/menu.png"> 
+                    <div class = "text-footer">Меню</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div data-role = "page" id = "page3" data-theme="d">
+            <div data-role = "header" class = "header-padding">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width: 33%;">
+                            <i class="fas fa-arrow-left text-color"></i>
+                        </td>
+                        <td style="width: 33%; text-align: center;">
+                            <div data-role="collapsible" data-iconpos="right" data-collapsed="true"
+                                data-collapsed-icon="carat-u" data-expanded-icon="carat-d" data-inset="false"> 
+                                <h3>
+                                    Контакты
+                                </h3>
+                            </div>
+                        </td>
+                        <td style="width: 33%; text-align: right;">
+                            <i class="far fa-calendar-alt cal text-color"></i>
+                            <div class = "radius-red">12</div>
+                            <i class="fas fa-bell text-color"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div data-role = "main" class = "ui-content">
+                <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-icon="false">
+                    <li>
+                        <a href="index.html">
+                            <img src = "img/hand.png" class="ui-li-icon ui-corner-none">
+                            Антонов Сергей Владимирович<br>
+                            +7 (495) 574-35-74
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src = "img/hand.png" class="ui-li-icon ui-corner-none">
+                            Винницкая Алёна Степановна<br>
+                            +7 (495) 574-35-74
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src = "img/hand.png" class="ui-li-icon ui-corner-none">
+                            Сидоров Илья Иванович<br>
+                            +7 (495) 574-35-74
+                        </a>
+                    </li>
+                    <li><a href="index.html">
+                        <img src = "img/hand.png" class="ui-li-icon ui-corner-none">
+                            Степанено Софья Анатольевна<br>
+                            +7 (495) 574-35-74
+                        </a>
+                    </li>
+                    <li><a href="index.html"><img src = "img/hand.png" class="ui-li-icon ui-corner-none">Culver James</a></li>
+                </ul>
+                <div>
+                    A
+                    <div data-inset="true">
+                        <div class = "hands">
+                            <img src = "img/hand.png">
+                        </div>
+                        <div class = "trade-name">
+                            Сидоров Илья Иванович<br>
+                            <span>+7(495) 574-35-74</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class = "hands">
+                            <img src = "img/hand.png">
+                        </div>
+                        <div class = "trade-name">
+                            Сидоров Илья Иванович<br>
+                            <span>+7(495) 574-35-74</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <div class = "badges-text">
+                    <a href="#page1">
+                        <img src = "img/hand.png"> 
+                        <div class = "text-footer">Сделки</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <a href="#page2">
+                        <img src = "img/task.png"> 
+                        <div class = "text-footer text-footer-green">Задачи</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <img src = "img/contact.png"> 
+                    <div class = "text-footer">Контакты</div>
+                </div>
+                <div class = "badges-text">
+                    <a href="#page4">
+                        <img src = "img/call.png"> 
+                        <div class = "text-footer">Звонки</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <img src = "img/menu.png"> 
+                    <div class = "text-footer">Меню</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div data-role = "page" id = "page4" data-theme="d">
+            <div data-role = "header" class = "header-padding">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width: 33%;">
+                            <i class="fas fa-arrow-left text-color"></i>
+                        </td>
+                        <td style="width: 33%; text-align: center;">
+                            <div data-role="collapsible" data-iconpos="right" data-collapsed="true"
+                                data-collapsed-icon="carat-u" data-expanded-icon="carat-d" data-inset="false"> 
+                                <h3>
+                                    Задачи
+                                </h3>
+                            </div>
+                        </td>
+                        <td style="width: 33%; text-align: right;">
+                            <i class="far fa-calendar-alt cal text-color"></i>
+                            <div class = "radius-red">12</div>
+                            <i class="fas fa-bell text-color"></i>
+                        </td>
+                    </tr>
+                </table>
+                <table style="width:100%;">
+                    <tr>
+                        <td class = "for-today today">
+                            Входящие
+                        </td> 
+                        <td class = "for-today">
+                            Исходящие
+                        </td> 
+                    </tr>
+                </table>
+            </div>
+            <div data-role = "main" class = "ui-content">
+                <div data-role="collapsible" data-iconpos="right" data-collapsed="false"
+                    data-collapsed-icon="arrow-u" data-expanded-icon="arrow-d">
+                    <h3>
+                        <div class = "hands">
+                            <img src = "img/foto.png">
+                        </div>
+                        <div class = "trade-name">
+                            Сидоров Илья Иванович<br>
+                            <span>+7 (495) 574-35-74</span><br>
+                            <text class = "col-left-noline gray-header">
+                                Сегодня, 12:14
+                            </text>
+                        </div>
+                    </h3>
+                    <table style = "width: 100%;">
+                        <tr>
+                            <td class = "col-left-noline gray-header">
+                                Направление
+                            </td>
+                            <td class = "col-left-noline gray-header">
+                                Длительность
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "name-people-1">
+                                <img src = "img/arrow.png">
+                                Входящий
+                            </td>
+                            <td class = "name-people-1">
+                                109 сек
+                            </td>
+                        </tr>
+                        <tr class = "indentation">
+                            <td class = "col-left-noline gray-header">
+                                Номер звонящего
+                            </td>
+                            <td class = "col-left-noline gray-header">
+                                Принял
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "col-date">
+                                100
+                            </td>
+                            <td class = "name-people-1 name-people-2">
+                                +7 (945) 147-58-52
+                            </td>
+                        </tr>
+                    </table>
+                    <div class = "auto-height">
+                        <button class = "play">
+                            <img src = "img/play.png">
+                        </button>
+                        <div class = "indicator"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <div class = "badges-text">
+                    <a href="#page1">
+                        <img src = "img/hand.png"> 
+                        <div class = "text-footer">Сделки</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <a href="#page2">
+                        <img src = "img/task.png"> 
+                        <div class = "text-footer text-footer-green">Задачи</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <a href="#page3">
+                        <img src = "img/contact.png"> 
+                        <div class = "text-footer">Контакты</div>
+                    </a>
+                </div>
+                <div class = "badges-text">
+                    <img src = "img/call.png"> 
+                    <div class = "text-footer">Звонки</div>
+                </div>
+                <div class = "badges-text">
+                    <img src = "img/menu.png"> 
+                    <div class = "text-footer">Меню</div>
+                </div>
+            </div>
+        </div>
+    </boby>
+</html>
